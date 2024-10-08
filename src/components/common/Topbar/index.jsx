@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import LinkedinLogo from "../../../assets/linkedinLogo.png";
 import user from "../../../assets/user.png";
 import SearchUsers from "../SearchUsers";
 import {
@@ -14,6 +13,7 @@ import { BsBriefcase } from "react-icons/bs";
 import { getAllUsers } from "../../../api/FirestoreAPI";
 import ProfilePopup from "../ProfilePopup";
 import "./index.scss";
+import { ten_logo } from "../../../assets/assets";
 
 export default function Topbar({ currentUser }) {
   const [popupVisible, setPopupVisible] = useState(false);
@@ -75,7 +75,7 @@ export default function Topbar({ currentUser }) {
         <></>
       )}
 
-      <img className="linkedin-logo" src={LinkedinLogo} alt="LinkedinLogo" />
+      <img className="ten-logo" src={ten_logo} alt="ten-logo" />
       {isSearch ? (
         <SearchUsers
           setIsSearch={setIsSearch}

@@ -1,11 +1,11 @@
 import React, { useState } from "react";
 import { RegisterAPI } from "../api/AuthAPI";
 import { postUserData } from "../api/FirestoreAPI";
-import LinkedinLogo from "../assets/linkedinLogo.png";
 import { useNavigate } from "react-router-dom";
 import { getUniqueID } from "../helpers/getUniqueId";
 import "../Sass/LoginComponent.scss";
 import { toast } from "react-toastify";
+import { ten_logo } from "../assets/assets";
 
 export default function RegisterComponent() {
   let navigate = useNavigate();
@@ -31,7 +31,7 @@ export default function RegisterComponent() {
 
   return (
     <div className="login-wrapper">
-      <img src={LinkedinLogo} className="linkedinLogo" />
+      <img src={ten_logo} className="ten-logo" />
 
       <div className="login-wrapper-inner">
         <h1 className="heading">Make the most of your professional life</h1>
@@ -69,7 +69,7 @@ export default function RegisterComponent() {
       <hr class="hr-text" data-content="or" />
       <div className="google-btn-container">
         <p className="go-to-signup">
-          Already on LinkedIn?{" "}
+          Already on The Entrepreneurship Network?{" "}
           <span className="join-now" onClick={() => navigate("/")}>
             Sign in
           </span>

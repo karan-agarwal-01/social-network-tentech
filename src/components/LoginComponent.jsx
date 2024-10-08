@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { LoginAPI } from "../api/AuthAPI";
-import LinkedinLogo from "../assets/linkedinLogo.png";
 import { useNavigate } from "react-router-dom";
 import "../Sass/LoginComponent.scss";
 import { toast } from "react-toastify";
+import { ten_logo } from "../assets/assets";
 
 export default function LoginComponent() {
   let navigate = useNavigate();
@@ -22,7 +22,7 @@ export default function LoginComponent() {
 
   return (
     <div className="login-wrapper">
-      <img src={LinkedinLogo} className="linkedinLogo" />
+      <img src={ten_logo} className="ten-logo" />
 
       <div className="login-wrapper-inner">
         <h1 className="heading">Sign in</h1>
@@ -53,7 +53,7 @@ export default function LoginComponent() {
       <hr className="hr-text" data-content="or" />
       <div className="google-btn-container">
         <p className="go-to-signup">
-          New to LinkedIn?{" "}
+          New to The Entrepreneurship Network?{" "}
           <span className="join-now" onClick={() => navigate("/register")}>
             Join now
           </span>
