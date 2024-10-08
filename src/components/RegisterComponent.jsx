@@ -69,7 +69,7 @@ export default function RegisterComponent() {
       <hr class="hr-text" data-content="or" />
       <div className="google-btn-container">
         <p className="go-to-signup">
-          Already on The Entrepreneurship Network?{" "}
+          Already on TEN social network?{" "}
           <span className="join-now" onClick={() => navigate("/")}>
             Sign in
           </span>

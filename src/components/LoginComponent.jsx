@@ -53,7 +53,7 @@ export default function LoginComponent() {
       <hr className="hr-text" data-content="or" />
       <div className="google-btn-container">
         <p className="go-to-signup">
-          New to The Entrepreneurship Network?{" "}
+          New to TEN social network?{" "}
           <span className="join-now" onClick={() => navigate("/register")}>
             Join now
           </span>
