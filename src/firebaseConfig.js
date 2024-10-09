@@ -8,14 +8,14 @@ import { getStorage } from "firebase/storage";
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyBPea5VHJqonN4VIstIatzVeGiIoHtfEt8",
-    authDomain: "social-nttwork-project.firebaseapp.com",
-    databaseURL: "https://social-nttwork-project-default-rtdb.firebaseio.com",
-    projectId: "social-nttwork-project",
-    storageBucket: "social-nttwork-project.appspot.com",
-    messagingSenderId: "1068031897226",
-    appId: "1:1068031897226:web:7b3e204e355cba80b60773",
-    measurementId: "G-LX7P39PHJC",
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    databaseURL: import.meta.env.VITE_FIREBASE_DATABASE_URL,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID,
 };
 
 // Initialize Firebase
